@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+a img {
+    margin-bottom: -4px;
+    width: 20px;
+}
+
+.Planet {
+    font-family: AXIS;
+    z-index: 15;
+    color: white;
+}
+
+#Home {
+    cursor: pointer;
+}
+
+#Arrow {
+    margin-bottom: 10vh;
+    width: 64px;
+}
+
+h1 img {
+    margin-bottom: -3vh;
+    width: 20vh;
+}
+
+.Thirty img {
+    margin-bottom: -0.3vh;
+    width: 2.7vh;
+}
+
+html {
+    height: 100%;
+}
+
+#Arrow {
+    margin-top: 13em;
+    z-index: 3;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.Ninty {
+    flex-flow: row;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    float: right;
+    width: 90%;
+    height: auto;
+}
+
+.Thirty {
+    width: 10%;
+    height: auto;
+}
+
+/*----------Parallax block----------*/
+.parallax-window {
+    opacity: 0.8;
+    box-sizing: border-box;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 25%;
+    width: 100%;
+    font-family: Adobe Clean Light;
+    color: #fff;
+}
+
+.parallax-window h1 {
+    margin-top: -100px;
+    font-size: 20vh;
+}
+
+.parallax-window small {
+    font-size: 40px;
+}
+
+/*----------First block----------*/
+.first {
+    background-image: url(C:\Users\HP\Space\img\photo_2019-05-04_13-57-17.jpg);
+    margin: 2em auto;
+    max-width: 1480px;
+    min-height: 100%;
+}
+
+.first h2 {
+    padding: 3vh;
+    color: white;
+    font-family: Axis;
+    font-size: 4em;
+    text-align: center;
+    text-decoration: underline #7B03E0;
+}
+
+.first h2:hover {
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    color: #7B03E0;
+    font-family: AXIS;
+    font-size: 4em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.g-line {
+    background-color: #7B03E0;
+    height: 5px;
+    width: 10em;
+}
+
+.gagarin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gagarin img {
+    width: 25vh;
+    height: 34vh;
+}
+
+.gagarin img:hover {
+    transition: all .1s ease-out;
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.gagarin img, .gagarin span {
+    margin: 0em 0em 3em 3em;
+}
+
+.gagarin span {
+    cursor: default;
+    font-family: AXIS;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #8d8d8d;
+    width: 25em;
+}
+
+.first-a a {
+    font-family: AXIS;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 25em;
+    color: #7B03E0;
+    text-decoration: none;
+}
+
+.a-line {
+    background-color: #7B03E0;
+    width: 0em;
+    height: 5px;
+    transition: 0.3s linear;
+}
+
+.first-a:hover .a-line {
+    width: 5.4em;
+}
+
+/*----------Second block----------*/
+.second {
+    margin: 2em auto;
+    max-width: 1480px;
+    min-height: 100%;
+}
+
+.second h2 {
+    color: white;
+    font-family: AXIS;
+    font-size: 4em;
+    text-align: center;
+    text-decoration: underline #7B03E0;
+}
+
+.second h2:hover {
+    transition: all .1s ease-in;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: AXIS;
+    font-size: 4em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.div-galaxy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.galaxy {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 1em 1em 1em 1em;
+}
+
+.img_block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+    color: #fff;
+    font-size: 52px;
+}
+
+.galaxy:hover .img_block {
+    z-index: 1;
+}

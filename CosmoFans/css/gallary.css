@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900);
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gallary {
+    padding: 100px;
+    max-width: 1480px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*---------g1----------*/
+#image_01 {
+    background-image: url("https://ununsplash.imgix.net/photo-1422022098106-b3a9edc463af?fit=crop&fm=jpg&h=700&q=75&w=1050");
+    background-size: 470px;
+    width: 450px;
+    height: 310px;
+    margin: auto;
+    text-align: center;
+    transition: all 0.4s;
+    position: relative;
+}
+
+#image_01:hover #image_01_hover03 {
+    opacity: 0.2;
+}
+
+#image_01:hover #image_01_hover {
+    opacity: 1.0;
+    top: 120px;
+    left: -40px;
+}
+
+#image_01:hover #image_01_hover02 {
+    top: 66px;
+    left: 40px;
+    opacity: 1.0;
+}
+
+#image_01_hover {
+    width: 77px;
+    height: 50px;
+    background-color: transparent;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 0px solid #fff;
+    position: relative;
+    top: 120px;
+    left: -170px;
+    margin: auto;
+    opacity: 0.0;
+    transition: all 0.4s;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#image_01_hover02 {
+    width: 110px;
+    height: 50px;
+    background-color: transparent;
+    border-left: 0px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: relative;
+    top: 66px;
+    left: 160px;
+    margin: auto;
+    opacity: 0.0;
+    transition: all 0.4s;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#image_01_hover03 {
+    background-color: #000;
+    width: 450px;
+    height: 310px;
+    margin: auto;
+    text-align: center;
+    transition: all 0.4s;
+    position: relative;
+    top: -108px;
+    opacity: 0.0;
+}
+
+/*---------g2----------*/
+.gallary .g2 {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    width: 380px;
+    background: url('https://ununsplash.imgix.net/photo-1433838552652-f9a46b332c40?dpr=2&fit=crop&fm=jpg&h=700&q=75&w=1050') center left no-repeat;
+    background-size: cover;
+    margin: 1em;
+}
+
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 31, 0.62);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.box:hover .hover-effect {
+    opacity: 1;
+}
+
+.box:hover .hover-text {
+    right: 0;
+}
+
+.hover-text {
+    position: absolute;
+    right: -100%;
+    bottom: 0;
+    display: block;
+    max-width: 100%;
+    padding: 90px 45px;
+    color: #e2e2e2;
+    text-decoration: none;
+    text-align: right;
+    line-height: 1.5em;
+    font-size: 10px;
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.8em 0;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid #fff;
+}
+
+p {
+    width: 70%;
+    line-height: 1.7em;
+    display: inline-block;
+    text-align: right;
+}
+
+/*---------g3----------*/
+.gallary .g3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.buttons * {
+    transition: all .5s ease;
+}
+
+.buttons {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.butFrame {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    width: 450px;
+    height: 300px;
+    background: #111;
+    font-family: inherit;
+    font-size: 1em;
+    text-align: center;
+}
+
+.butFrame img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.butFrame p {
+    text-align: center;
+}
+
+.buttons>.butHeading {
+    clear: both;
+    margin: 0;
+    padding: 4em 1% 0;
+    color: #484B54;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+#buttons>.butHeading:first-child {
+    padding-top: 0em;
+}
+
+.butFrame .butTextWrap {
+    font-family: inherit;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.butFrame .butTextWrap::before,
+.butFrame .butTextWrap::after {
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+}
+
+.butFrame .butTextWrap,
+.butFrame .butTextWrap>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.butFrame .butTextWrap>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.butFrame .butHeading {
+    word-spacing: -0.15em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.butFrame .butHeading .butText {
+    font-weight: 300;
+}
+
+.butFrame .butHeading,
+.butFrame p {
+    margin: 0;
+    color: #fff;
+}
+
+.butFrame p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+    font-family: inherit;
+}
+
+.butFrame img {
+    opacity: 0.9;
+    transition: opacity 0.35s;
+    width: 100%;
+    height: auto;
+}
+
+.butFrame .butTextWrap::before,
+.butFrame .butTextWrap::after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.butFrame .butTextWrap::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.butFrame .butTextWrap::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    box-sizing: border-box;
+}
+
+.butFrame .butHeading {
+    padding-top: 20%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+.butFrame p {
+    padding: 10px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+.butFrame:hover img {
+    opacity: 0.4;
+}
+
+.butFrame:hover .butTextWrap::before,
+.butFrame:hover .butTextWrap::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.butFrame:hover .butHeading,
+.butFrame:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-align: center;
+}
+
+@media all and (max-width: 950px) and (min-width: 701px) {
+    .butFrame {
+        display: block;
+        width: 47%;
+    }
+}
+
+@media all and (max-width: 700px) and (min-width: 0px) {
+    .butFrame {
+        display: block;
+        width: 100%;
+    }
+}

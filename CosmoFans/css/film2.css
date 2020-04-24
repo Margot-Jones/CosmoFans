@@ -1,0 +1,194 @@
+body {
+    background: #000;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: lightgrey;
+    height: 50px;
+}
+
+img {
+    width: 20vh;
+}
+
+p {
+    font-size: 3vh;
+    font-family: AXIS;
+    text-align: center;
+    color: white;
+}
+
+#a {
+    font-size: 1.5vh;
+    font-family: AXIS;
+    text-align: center;
+    color: white;
+}
+
+.Left-main {
+    width: 50%;
+    height: 94vh;
+    margin-left: 0px;
+    position: fixed;
+}
+
+.Right-main {
+    width: 50%;
+    height: 94vh;
+    right: 0;
+    position: fixed;
+}
+
+.Left-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Left-main-container p {
+    color: white;
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: AXIS;
+}
+
+.cover {
+    width: 20vh;
+    height: 32vh;
+    margin-left: 5vh;
+    text-align: center;
+    font-family: Axis;
+    margin: 2vh;
+}
+
+.Right-middle-right {
+    margin: 0 auto;
+    width: 70vh;
+    height: 90vh;
+}
+
+.Right-main .Input-text {
+    font-family: Axis;
+}
+
+#Headline-text {
+    font-size: 15px;
+}
+
+#Headline-text:hover {
+    color: black;
+}
+
+.cover:hover {
+    transition: all .2s ease-out;
+    transform: scale(1.1);
+}
+
+.Right-main-container {
+    margin: 2vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Input-text {
+    font-family: Axis;
+    font-size: 15px;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+#Headline {
+    color: black;
+    font-size: 20px;
+    margin: 2vh
+}
+
+#Headline-text {
+    margin: 2vh;
+}
+
+#Right {
+    height: 20px;
+    color: rgba(175, 175, 175, 1);
+}
+
+.Container-Up-Left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50px;
+    background-color: Lighgrey;
+    position: absolute;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    text-align: left;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.Container-Up-Right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 50px;
+    background-color: Lighgrey;
+    position: absolute;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.Search {
+    background-color: rgba(237, 237, 237, 1);
+    width: 80px;
+    text-align: center;
+    color: grey;
+    font-family: Axis;
+    font-size: 15px;
+    height: 25px;
+    vertical-align: middle;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: default;
+}
+
+#Search {
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+a {
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Axis;
+    color: rgba(74, 74, 74, 1);
+}
+
+footer a:hover {
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+#Yeti {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+}

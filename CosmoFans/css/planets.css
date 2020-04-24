@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+    margin-top: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.img__img {
+    padding: 1vh;
+    width: 25vh;
+    height: 25vh;
+}
+
+.img__description {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    font-size: 2vh;
+    position: absolute;
+    padding: 2vh;
+    height: 100%;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__wrap:hover .img__img {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.planets {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+span {
+    margin-top: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.planets div {
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 180px;
+    margin: 2em;
+    margin-bottom: 3em;
+}
+
+.saturn {
+    width: 400px;
+    height: 200px;
+    margin: 2em;
+}
+
+.venus {
+    position: relative;
+    left: 2em;
+}
+
+.card {
+    margin: 2em;
+    margin-bottom: 3em;
+    width: auto;
+    max-width: 30vh;
+    height: 25vh;
+    max-height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.back {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    background-color: #ffffff;
+    border-radius: 100%;
+    transform: rotateY(180deg);
+}
+
+.back a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
